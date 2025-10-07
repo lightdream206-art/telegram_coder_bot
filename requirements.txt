@@ -1,0 +1,1 @@
+python-telegram-bot==20.X # Eng yangi versiyani https://pypi.org/project/python-telegram-bot/ dan tekshiring Flask==2.X # Flask ning eng yangi versiyasini https://pypi.org/project/Flask/ dan tekshiring gunicorn==20.X # Veb-server uchun
