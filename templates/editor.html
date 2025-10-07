@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Muharriri</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #editor { border: 1px solid #ccc; height: 400px; width: 90%; margin-bottom: 10px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Onlayn Kod Muharriri</h1>
+    <div id="editor"></div>
+    <button onclick="alert('Saqlash funksiyasi keyin qo\'shiladi!')">Saqlash</button>
+    <button onclick="alert('Bajarish funksiyasi keyin qo\'shiladi!')">Bajarish</button>
+    <button onclick="alert('Telegramga yuborish funksiyasi keyin qo\'shiladi!')">Telegramga Yuborish</button>&lt;!-- Monaco Editor ni qo'shish --&gt;
+&lt;script src="https://unpkg.com/monaco-editor@0.34.1/min/vs/loader.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@0.34.1/min/vs' }});
+    require(['vs/editor/editor.main'], function() {
+        window.editor = monaco.editor.create(document.getElementById('editor'), {
+            value: 'print("Salom, dunyo! Bu sizning kod muharriringiz.")',
+            language: 'python',
+            theme: 'vs-dark',
+            automaticLayout: true // Telefondagi ekran o'lchamiga moslashish uchun
+        });
+        // Ekran o'lchami o'zgarganda muharrirni qayta chizish
+        window.addEventListener('resize', () =&gt; editor.layout());
+    });
+&lt;/script&gt;
+</body>
+</html>
