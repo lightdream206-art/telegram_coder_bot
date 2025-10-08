@@ -1,4 +1,4 @@
-python-telegram-bot==20.X.X # Eng yangi versiyani https://pypi.org/project/python-telegram-bot/ dan tekshiring
+python-telegram-bot==20.8 # Eng yangi versiyani https://pypi.org/project/python-telegram-bot/ dan tekshiring
 Flask==2.X.X               # Flask ning eng yangi versiyasini https://pypi.org/project/Flask/ dan tekshiring
 gunicorn==20.X.X           # Veb-server uchun, eng yangi versiyani https://pypi.org/project/gunicorn/ dan tekshiring
 SQLAlchemy==1.4.X          # Ma'lumotlar bazasi ORM uchun (keyinchalik kerak bo'ladi)
