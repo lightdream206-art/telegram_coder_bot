@@ -1,6 +1,5 @@
-python-telegram-bot==20.8 # Eng yangi versiyani https://pypi.org/project/python-telegram-bot/ dan tekshiring
-Flask==2.X.X               # Flask ning eng yangi versiyasini https://pypi.org/project/Flask/ dan tekshiring
-gunicorn==20.X.X           # Veb-server uchun, eng yangi versiyani https://pypi.org/project/gunicorn/ dan tekshiring
-SQLAlchemy==1.4.X          # Ma'lumotlar bazasi ORM uchun (keyinchalik kerak bo'ladi)
-psycopg2-binary==2.X.X     # PostgreSQL ma'lumotlar bazasi uchun driver (agar PostgreSQL ishlatilsa)
-# APScheduler==3.X.X         # Rejalashtirish mexanizmi uchun (keyinchalik kerak bo'ladi)
+        Flask==2.2.5
+        gunicorn==20.1.0
+        python-telegram-bot==20.8
+        requests==2.31.0
+        
